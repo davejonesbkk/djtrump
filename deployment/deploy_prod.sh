@@ -1,9 +1,9 @@
 #!/bin/sh
 
 ssh ubuntu@35.173.136.101 <<EOF
-  cd djtrump
+  cd /home/david/djtrump/djtrump
   git pull
-  source /djtrumpenv/bin/activate
+  source /home/david/djtrump/djtrumpenv/bin/activate
   pip install -r requirements.txt
   ./manage.py migrate
   sudo supervisorctl restart djtrump
