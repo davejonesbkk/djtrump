@@ -3,9 +3,10 @@ from .base import *
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'djtrumpprod',
+        'NAME': 'djtrump',
         'USER': 'djtrumpuser',
-        'PASSWORD': 'djtrump',
-        'PORT': '5432',
+	'PASSWORD': 'password',
+        'PORT': '',
+	'HOST': 'localhost',
     }
 }
