@@ -6,6 +6,6 @@ ssh ubuntu@35.173.136.101 <<EOF
   source /home/david/djtrump/djtrumpenv/bin/activate
   pip install -r requirements.txt
   ./manage.py migrate
-  sudo supervisorctl restart djtrump
+  #sudo supervisorctl restart djtrump
   exit
 EOF
